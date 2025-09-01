@@ -1,0 +1,21 @@
+scp command:
+  --->Copy the files from local system to remote system
+  --->scp command will be executed in local pc(windows-cmd prompt)
+syn:
+  scp -i ./key-pair.pem ./path/to/files/ <username>@<public-ip>:/pathwhere/you/need/to/copy
+
+
+ex:
+ scp -i ./xyz.pem ./hello.txt ec2-user@178.x.x.21:/home/ec2-user/hello/
+
+Example demo:
+ 1.scp -i C:\Users\prave\Downloads\demo-9am-key.pem C:\Users\prave\Downloads\httpdscript.txt ubuntu@ec2-3-82-18-169.compute-1.amazonaws.com:\home\ubuntu
+
+ 2.scp -i C:\Users\prave\Downloads\demo-9am-key.pem D:\version.txt ubuntu@ec2-3-82-18-169.compute-1.amazonaws.com:\home\ubuntu
+
+Using Public-IP:
+
+scp -i C:\Users\prave\Downloads\win-pruthvi.pem D:\version3.txt ec2-user@100.24.46.146:/home/ec2-user
+
+Ref:
+  https://intellipaat.com/community/43019/how-to-copy-files-from-local-machine-to-my-aws-instance
